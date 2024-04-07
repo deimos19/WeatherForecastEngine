@@ -1,0 +1,254 @@
+*{
+    margin: 0%;
+}
+body{
+    background-image: url(images/bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    height: auto;
+    /* background-image: linear-gradient(to bottom, rgba(35, 223, 186, 0.948), rgb(0, 195, 255)); */
+}
+.container{
+    /* background-color: aquamarine; */
+    height: auto;
+    width: 100%;
+}
+.name{
+    height: auto;
+    width: auto;
+}
+.name h1{
+    /* margin-left: 450px; */
+    color: rgb(253, 253, 253);
+    font-size: 70px;
+    font-family:cursive;
+}
+.search{
+    margin-left: 590px;
+    margin-top: 20px;
+    /* align-items: center; */
+    /* background-color: blueviolet; */
+    height: auto;
+    width: auto;
+    display: flex;
+}
+.search input{
+    height: 45px;
+    width: 300px;
+    background-color: rgba(172, 246, 246, 0.444);
+    border: none;
+    border-radius: 15px;
+    padding-left: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+.search input::placeholder{
+    padding-left: 0px;
+    color: rgb(40, 40, 39);
+    font-size: 18px;
+}
+.search button{
+    height: 45px;
+    width: 45px;
+    background-color: rgba(172, 246, 246, 0.444);
+    border-color: rgb(16, 128, 128);
+    border-radius: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.search button img{
+    width: 20px;
+    margin-right: 3px;
+    margin-top: 3px;
+    margin-left: 2px;
+}
+.weather-icon{
+    width: 170px;
+}
+.temp{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 72px;
+    color: aliceblue;
+}
+.city{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+    color: aliceblue;
+}
+.details{
+    display: flex;
+    padding-left: 460px;
+    margin-top: 30px;
+}
+.col{
+    margin-left: 100px;
+    display: flex;
+}
+.col img{
+    width: 50px;
+}
+.col p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    margin-left: 10px;
+}
+.humidity{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: aliceblue;
+}
+.wind{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 22px;
+    color: aliceblue;
+}
+.more_details{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 225px;
+}
+.mm{
+    display: flex;
+}
+.m-col{
+    margin-left: 100px;
+    display: flex;
+}
+.m-col p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: aliceblue;
+    margin-left: 10px;
+}
+/* .weather{
+    display: none;
+} */
+.err{
+    color: rgb(204, 255, 0);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 0px;
+    display: none;
+}
+.cityErr{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 42px;
+    color: red;
+    display: none;
+}
+.err a{
+    color: rgb(255, 249, 144);
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+@media (max-width : 1024px){
+    body{
+          /* background-image: linear-gradient(to bottom, rgba(35, 223, 186, 0.948), rgb(0, 195, 255)); */
+          background-image: url(images/bg.jpeg);
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-attachment: fixed;
+        
+    }
+    .container{
+        /* background-color: aquamarine; */
+        width: 100%;
+        /* margin-left: -20px; */
+    }
+    .name{
+        height: auto;
+        width: 500px;
+    }
+    .name h1{
+        /* margin-left: 450px; */
+        color: rgb(253, 253, 253);
+        font-size: 60px;
+        font-family:cursive;
+    }
+    .search{
+        margin-top: 100px;
+        width: 800px;
+        margin-left: 50px;
+    }
+    .search input{
+        /* margin-left: -150px; */
+        height: 100px;
+        border-radius: 100px;
+        width: 800px;
+        background-color: rgba(212, 214, 213, 0.792);
+        font-size: 30px;
+        color: black;
+    }
+    .search input::placeholder{
+        padding-left: 0px;
+        color: rgb(40, 40, 39);
+        font-size: 30px;
+    }
+    .search button{
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        background-color: rgba(212, 214, 213, 0.792);
+    }
+    .weather{
+        margin-left: 250px;
+        /* background-color: black; */
+        text-align: center;
+        margin-top: 50px;
+    }
+    .weather-icon{
+        width: 400px;
+        margin-left: 0px;
+    }
+    .city{
+        margin-top: 20px;
+        font-size: 55px;
+        margin-left: 25px;
+        text-align: center;
+    }
+    .cityErr{
+        margin-top: 50px;
+        width: 500px;
+        /* background-color: aqua; */
+        margin-left: -50px;
+    }
+    .err{
+        font-size: 29px;
+        width: 600px;
+    }
+    .temp{
+        font-size: 90px;
+        margin-left: 0px;
+        width: 400px;
+        text-align: center;
+    }
+    .details{
+        margin-left: -550px;
+        margin-top: 100px;
+    }
+    .col{
+        margin-left: -20px;
+    }
+    .col p{
+        font-size: 30px;
+        width: 300px;
+        margin-left: -50px;
+        margin-top: 10px;
+    }
+    .col img{
+        width: 120px;
+    }
+    .more_details{
+        margin-left: -310px;
+        margin-top: 100px;
+    }
+    .mm p{
+        font-size: 25px;
+        width: 150px;
+        margin-left: -40px;
+    }
+}
